@@ -1,0 +1,88 @@
+﻿<Window x:Class="WPF21._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF21._1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl x:Name="products">
+            <TabItem x:Name="rus">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Русский язык</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBlock Text="Информацция о лекциях"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Домашнее задание"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Тест"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Оценка"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="1" GroupName="mark2"/>
+                            <RadioButton Content="2" GroupName="mark2"/>
+                            <RadioButton Content="3" GroupName="mark2"/>
+                            <RadioButton Content="4" GroupName="mark2"/>
+                            <RadioButton Content="5" GroupName="mark2"/>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="ang">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Английский</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBlock Text="Информацция о лекциях"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Домашнее задание"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Тест"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Оценка"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="1" GroupName="mark1"/>
+                            <RadioButton Content="2" GroupName="mark1"/>
+                            <RadioButton Content="3" GroupName="mark1"/>
+                            <RadioButton Content="4" GroupName="mark1"/>
+                            <RadioButton Content="5" GroupName="mark1"/>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="math">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="3">Математика</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBlock Text="Информацция о лекциях"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Домашнее задание"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Тест"/>
+                        <TextBox TextWrapping="Wrap"/>
+                        <TextBlock Text="Оценка"/>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="1" GroupName="mark"/>
+                            <RadioButton Content="2" GroupName="mark"/>
+                            <RadioButton Content="3" GroupName="mark"/>
+                            <RadioButton Content="4" GroupName="mark"/>
+                            <RadioButton Content="5" GroupName="mark"/>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
